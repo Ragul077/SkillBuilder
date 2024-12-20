@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning Course Profile</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deep Learning Course Profile</h1>
+        <div class="course-details">
+            <h2>Course Overview</h2>
+            <p>The Deep Learning course is designed for beginners and intermediate learners, covering fundamental concepts and advanced techniques in neural networks. Deep Learning is a subset of machine learning that mimics the workings of the human brain to process data and create patterns for decision-making.</p>
+            
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Introduction to Neural Networks</li>
+                <li>Understanding Perceptrons and Activation Functions</li>
+                <li>Training Deep Neural Networks using Backpropagation</li>
+                <li>Working with Convolutional Neural Networks (CNNs) for Image Processing</li>
+                <li>Implementing Recurrent Neural Networks (RNNs) for Sequential Data</li>
+                <li>Understanding Transfer Learning and Pre-trained Models</li>
+                <li>Hands-on projects using TensorFlow and PyTorch</li>
+            </ul>
+            
+            <h2>Course Duration</h2>
+            <p>12 weeks (5 hours per week)</p>
+			<button onclick="goToEnrollment()" class="btn">Enroll Now</button>
+			<button onclick="goToVideos()" class="btn">Already Enrolled</button>
+
+            <h2>Prerequisites</h2>
+            <p>Basic knowledge of Python programming and machine learning concepts is recommended.</p>
+            
+            <button onclick="goBack()" class="btn">Back to Courses</button>
+		
+        </div>
+    </div>
+
+	<script>
+	        function goToEnrollment() {
+	            window.location.href = '/enrollment'; 
+	        }
+			function goToVideos() {
+			           window.location.href = '/deep1'; 
+			       }
+	        function goBack() {
+	            window.history.back();
+	        }
+	    </script>
+</body>
+</html>

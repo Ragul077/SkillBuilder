@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Course Profile</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cloud Computing Course Profile</h1>
+        <div class="course-details">
+            <h2>Course Overview</h2>
+            <p>The Cloud Computing course is designed for beginners and intermediate learners, providing an in-depth understanding of cloud technologies and services. Cloud computing allows users to access and store data and applications over the Internet, offering flexibility and scalability in IT solutions.</p>
+            
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Introduction to Cloud Computing Concepts and Models</li>
+                <li>Understanding Service Models: IaaS, PaaS, and SaaS</li>
+                <li>Exploring Public, Private, and Hybrid Cloud Environments</li>
+                <li>Cloud Security and Compliance Best Practices</li>
+                <li>Hands-on experience with major cloud platforms like AWS, Azure, and Google Cloud</li>
+                <li>Implementing Cloud Solutions for Data Storage and Processing</li>
+                <li>Overview of Containerization and Serverless Computing</li>
+            </ul>
+            
+            <h2>Course Duration</h2>
+            <p>8 weeks (4 hours per week)</p>
+			<button onclick="goToEnrollment()" class="btn">Enroll Now</button>
+			<button onclick="goToVideos()" class="btn">Already Enrolled</button>
+
+            <h2>Prerequisites</h2>
+            <p>Basic understanding of networking and IT infrastructure concepts is helpful but not required.</p>
+            
+            <button onclick="goBack()" class="btn">Back to Courses</button>
+			
+        </div>
+    </div>
+
+	<script>
+	        function goToEnrollment() {
+	            window.location.href = '/enrollment'; 
+	        }
+			function goToVideos() {
+			           window.location.href = '/cloud1'; 
+			       }
+	        
+	        function goBack() {
+	            window.history.back();
+	        }
+	    </script>
+</body>
+</html>

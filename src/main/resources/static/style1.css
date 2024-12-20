@@ -1,0 +1,351 @@
+body{
+    background-color: #666666;
+}
+.stud{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:white;
+    border-radius: 10px;
+    width: 400px;
+    background-color: #666666;
+}
+
+
+.online-course{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    color: #666666;
+    background: #2691d9;
+    font-size: 16px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+}
+a  {
+    text-decoration: none;
+    cursor: pointer;
+}
+.online-course:hover{
+    border-color: #2691d9;
+    transition: .20s;
+    text-decoration: underline;
+}
+.jobs{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    color: #666666;
+    background: #2691d9;
+    font-size: 16px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+}
+.jobs:hover{
+    border-color: #2691d9;
+    transition: .20s;
+    text-decoration: underline;
+}
+.events{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    color: #666666;
+    background: #2691d9;
+    font-size: 16px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.events:hover{
+    border-color: #2691d9;
+    transition: .20s;
+    text-decoration: underline;
+}
+button{
+    height: 50px;
+    width: 110px;
+    background:#e9f4fb;
+    border:4px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+a.btn-back{
+    position: absolute;bottom: 0;
+    left: 32%;
+    bottom: 20%;
+}
+button:hover{
+    border-color: #2691d9;
+    transition: .20s;
+    text-decoration: underline;
+}
+a.btn-log{
+    position: absolute;bottom: 0;
+    left: 47%;
+    bottom: 20%;
+}
+a.btn-home{
+    position: absolute;bottom: 0;
+    left: 62%;
+    bottom: 20%;
+}
+.online{
+   position: absolute;bottom: 0;
+   bottom :40%;
+   left: 15%;
+}
+.carier{
+    height: 200px;
+    width: 200px;
+    position: absolute;bottom: 0;
+    left: 75%;
+    bottom: 40%;
+}
+.head{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-bottom: 5px solid black;
+    background-color:#333;
+    position: sticky;
+}
+.python{
+    margin: 10px 5px 5px 5px;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+h2{
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid black;
+    background-color: #333;
+    color:aliceblue;
+}
+.java{
+    margin: 10px 5px 5px 5px;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.whole :hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.script{
+    position: absolute;bottom: 0;
+    left: 35%;
+    bottom: 59%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.cloud{
+    position: absolute;bottom: 0;
+    left: 35%;
+    bottom: 29%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.machine{
+    position: absolute;bottom: 0;
+    left: 35%;
+    bottom: -1%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.deep{
+    position: absolute;bottom: 0;
+    left: 69%;
+    bottom: 59%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+
+.react{
+    position: absolute;bottom: 0;
+    left: 69%;
+    bottom: 29%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+.db{
+    position: absolute;bottom: 0;
+    left: 69%;
+    bottom: -1%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+    text-align: center;
+    background-color:aliceblue;
+}
+.pro{
+    border: 4px solid aliceblue;
+    width: 150px;
+    margin-left: 30%;
+    height: 50px;
+    text-align: center;
+    background-color: #333;
+}
+.job{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border-bottom: 5px solid black;
+    background-color:antiquewhite;
+}
+.tex{
+    text-wrap:wrap;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.ama{
+    margin: 10px 5px 5px 5px;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 100px;
+    width: 450px;
+    text-align: center;
+    background-color:antiquewhite;
+}
+.face{
+    position: absolute;bottom: 0;
+    left: 35%;
+    bottom: 43.5%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 100px;
+    width: 450px;
+    text-align: center;
+    background-color:antiquewhite;
+}
+.jp{
+    position: absolute;bottom: 0;
+    left: 69%;
+    bottom: 43.5%;
+    border:4px solid black;
+    border-radius: 15px;
+    height: 100px;
+    width: 450px;
+    text-align: center;
+    background-color:antiquewhite;
+}
+.place{
+    font-size: 30px;
+    position: absolute;bottom: 0;
+    left: 35%;
+    bottom: 20%;
+
+}
+.com{
+    font-size: 30px;
+    position: absolute;bottom: 0;
+    left: 5%;
+    bottom: 20%;
+}
+.bt{
+    font-size: 30px;
+    position: absolute;bottom: 0;
+    left: 2%;
+    bottom: 5%;
+}
+.sear{
+    position: absolute;bottom: 0;
+    left: 69%;
+    bottom: 20%;
+}
+input{
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    background-color:antiquewhite;
+}
+input:hover{
+    border-color: #2691d9;
+    transition: .20s;
+}
+.backs{
+    position: absolute;bottom: 0;
+}
+
+.image{
+    height: 60px;
+    width: 60px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 50px; /* Adjust the top margin to position the buttons where you want */
+}
+
+.button-group a {
+    height: 50px;
+    width: 110px;
+    background: #e9f4fb;
+    border: 4px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px; /* Centers text vertically */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+.button-group a:hover {
+    background: #cce0f5; /* Add hover effect for better user experience */
+}
+
+/* You don't need separate positioning for each button, flexbox will handle it */

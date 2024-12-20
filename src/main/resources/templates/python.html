@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course Profile</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Course Profile</h1>
+        <div class="course-details">
+            <h2>Course Overview</h2>
+            <p>The Python programming course is designed for beginners and covers everything from the basics to advanced topics. Python is known for its readability and versatility, making it an ideal choice for anyone interested in programming, data science, web development, and more.</p>
+            
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Introduction to Python syntax and semantics</li>
+                <li>Working with data structures like lists, tuples, and dictionaries</li>
+                <li>Functions, loops, and conditional statements</li>
+                <li>Object-oriented programming concepts</li>
+                <li>Modules, libraries, and frameworks</li>
+                <li>Basic data analysis with Python</li>
+            </ul>
+            
+            <h2>Course Duration</h2>
+            <p>8 weeks (4 hours per week)</p>
+			<button onclick="goToEnrollment()" class="btn">Enroll Now</button>
+			<button onclick="goToVideos()" class="btn">Already Enrolled</button>
+
+            <h2>Prerequisites</h2>
+            <p>No prior programming experience is required.</p>
+            
+            <button onclick="goBack()" class="btn">Back to Courses</button>
+			
+        </div>
+    </div>
+
+	<script>
+	        function goToEnrollment() {
+	            window.location.href = '/enrollment'; 
+	        }
+			function goToVideos() {
+			           window.location.href = '/python1'; 
+			       }
+	        
+	        function goBack() {
+	            window.history.back();
+	        }
+	    </script>
+</body>
+</html>

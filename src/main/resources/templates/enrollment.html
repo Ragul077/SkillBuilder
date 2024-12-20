@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style8.css">
+    <title>Course Enrollment</title>
+</head>
+<body>
+    <header>
+        <h1>Course Enrollment</h1>
+    </header>
+    <main>
+        <div class="whole">
+            <form id="enrollmentForm" onsubmit="return handleSubmit(event)">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select a Course--</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML and CSS">HTML and CSS</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Deep Learning">Deep Learning</option>
+                    <option value="React">React</option>
+                    <option value="Mongo DB">Mongo DB</option>
+                </select>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+				
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+
+
+                <button type="submit">Enroll</button>
+            </form>
+            <button id="backButton" onclick="goBack()">← Back</button>
+        </div>
+    </main>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+		function handleSubmit(event) {
+		    event.preventDefault();
+		
+		    const course = document.getElementById('course').value;
+		    const name = document.getElementById('name').value;
+		    const email = document.getElementById('email').value;
+		    const password = document.getElementById('password').value;
+		
+		    const enrollmentData = {
+		        course,
+		        name,
+		        email,
+		        password
+		    };
+		
+		    fetch("http://localhost:8080/api/enrollments", {
+		        method: "POST",
+		        headers: {
+		            "Content-Type": "application/json"
+		        },
+		        body: JSON.stringify(enrollmentData)
+		    })
+		    .then(response => {
+		        if (response.ok) {
+		            // Redirect to course page based on selected course
+		            switch (course) {
+		                case 'Cloud Computing':
+		                    window.location.href = 'cloud.html';
+		                    break;
+		                case 'Python':
+		                    window.location.href = 'python.html';
+		                    break;
+		                case 'Java':
+		                    window.location.href = 'java.html';
+		                    break;
+		                case 'JavaScript':
+		                    window.location.href = 'javascript.html';
+		                    break;
+		                case 'HTML and CSS':
+		                    window.location.href = 'htmlcss.html';
+		                    break;
+		                case 'Machine Learning':
+		                    window.location.href = 'machinelearning.html';
+		                    break;
+		                case 'Deep Learning':
+		                    window.location.href = 'deeplearning.html';
+		                    break;
+		                case 'React':
+		                    window.location.href = 'react.html';
+		                    break;
+		                case 'Mongo DB':
+		                    window.location.href = 'mongodb.html';
+		                    break;
+		                default:
+		                    alert('Please select a valid course!');
+		            }
+		        } else {
+		            alert("Enrollment failed. Please try again.");
+		        }
+		    })
+		    .catch(error => {
+		        console.error("Error:", error);
+		        alert("An error occurred. Please try again.");
+		    });
+		}
+</script>
+</body>
+</html>

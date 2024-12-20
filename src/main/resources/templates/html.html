@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Course Profile</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML and CSS Course Profile</h1>
+        <div class="course-details">
+            <h2>Course Overview</h2>
+            <p>The HTML & CSS course is designed for beginners and intermediate learners, covering the essential concepts of web design and development. HTML (Hypertext Markup Language) is the standard language for creating web pages, while CSS (Cascading Style Sheets) controls the layout and styling. Together, they form the foundation of web development, enabling you to build and style interactive web pages</p>
+            
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Understanding HTML structure and elements</li>
+                <li>Creating and organizing content with HTML tags</li>
+                <li>Styling web pages with CSS properties</li>
+                <li>Working with colors, fonts, and layouts</li>
+                <li>Responsive web design using media queries</li>
+                <li>Building navigation menus and interactive buttons</li>
+                <li>Introduction to CSS Flexbox and Grid layouts</li>
+            </ul>
+            
+            <h2>Course Duration</h2>
+            <p>8 weeks (4 hours per week)</p>
+			<button onclick="goToEnrollment()" class="btn">Enroll Now</button>
+			<button onclick="goToVideos()" class="btn">Already Enrolled</button>
+
+            <h2>Prerequisites</h2>
+            <p>No prior web development experience is required, but basic computer skills are helpful</p>
+            
+            <button onclick="goBack()" class="btn">Back to Courses</button>
+			
+        </div>
+    </div>
+
+	<script>
+	        function goToEnrollment() {
+	            window.location.href = '/enrollment'; 
+	        }
+			function goToVideos() {
+			           window.location.href = '/html1'; 
+			       }
+	        
+	        function goBack() {
+	            window.history.back();
+	        }
+	    </script>
+</body>
+</html>

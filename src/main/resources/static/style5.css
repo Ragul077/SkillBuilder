@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(78, 83, 83);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color:#666666;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.course-details h2 {
+    color: #011124;
+    margin-top: 20px;
+}
+
+.course-details p {
+    line-height: 1.6;
+}
+
+.course-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.course-details ul li {
+    margin-bottom: 8px;
+}
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #357ab8;
+}
+
+ a{
+    text-decoration: none;
+    color: blue;
+}

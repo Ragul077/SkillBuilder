@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style7.css">
+    <title>Job Vacancies</title>
+</head>
+<body>
+    <header>
+        <h1>Job Vacancies</h1>
+        <input type="text" id="searchBox" placeholder="Search for a job..." onkeyup="searchJobs()">
+    </header>
+    <main>
+        <div class="job-list" id="jobList">
+            <div class="job-card">
+                <h2>Software Developer</h2>
+                <p>Company: Tech Innovators</p>
+                <p>Location: Banglore</p>
+                <button onclick="applyJob('Software Developer', 'Tech Innovators', 'Bangalore')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Graphic Designer</h2>
+                <p>Company: Creative Minds</p>
+                <p>Location: Chennai</p>
+                <button onclick="applyJob('Graphic Designer', 'Creative Minds', 'Chennai')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Data Scientist</h2>
+                <p>Company: Data Analytics Co.</p>
+                <p>Location: coimbatore</p>
+                <button onclick="applyJob('Data Scientist', ' Data Analytics Co.', 'coimbatore')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Data Analyst</h2>
+                <p>Company: Meta Analytics </p>
+                <p>Location: Hyderabad</p>
+                <button onclick="applyJob('Data Analyst', 'Meta Analytics', 'Hyderabad')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Testing</h2>
+                <p>Company: Fanuc</p>
+                <p>Location: coimbatore</p>
+                <button onclick="applyJob('Testing', 'Fanuc', 'coimbatore')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Software Developer</h2>
+                <p>Company: Accenture</p>
+                <p>Location: Kochi</p>
+                <button onclick="applyJob('Software Developer', 'Accenture', 'Kochi')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Designing</h2>
+                <p>Company: Data Brothers</p>
+                <p>Location: Mumbai</p>
+                <button onclick="applyJob('Designing', ' Data Brothers', 'Mumbai')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>Human Resourse</h2>
+                <p>Company: Data Analytics Co.</p>
+                <p>Location: Coimbatore</p>
+                <button onclick="applyJob('Human Resourse', 'Data Analytics Co.', 'Coimbatore')">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h2>DB Manager</h2>
+                <p>Company: Data Crunch & co</p>
+                <p>Location: Newyork</p>
+                <button onclick="applyJob('DB Manager', 'Data Crunch & co', 'Newyork')">Apply Now</button>
+            </div>
+        </div>
+        <button id="backButton" onclick="goBack()">← Back</button>
+    </main>
+    <script>
+        function searchJobs() {
+            const input = document.getElementById('searchBox').value.toLowerCase();
+            const jobCards = document.getElementsByClassName('job-card');
+            
+            for (let i = 0; i < jobCards.length; i++) {
+                const jobTitle = jobCards[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+                const company = jobCards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+                const location = jobCards[i].getElementsByTagName('p')[1].innerText.toLowerCase();
+                
+                if (jobTitle.includes(input) || company.includes(input) || location.includes(input)) {
+                    jobCards[i].style.display = "";
+                } else {   
+                    jobCards[i].style.display = "none";
+                             }
+            }
+        }
+        function goBack() {
+            window.history.back();
+        }
+        function applyJob(jobTitle, company, location) {
+             localStorage.setItem('jobTitle', jobTitle);
+             localStorage.setItem('company', company);
+             localStorage.setItem('location', location);
+             window.location.href = '/apply';
+       }
+    </script>
+</body>
+</html>
